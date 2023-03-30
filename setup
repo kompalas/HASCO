@@ -1,0 +1,53 @@
+## Instructions to operate with HASCO
+## Modified version of: https://github.com/pku-liang/HASCO/issues/3
+
+## first pull ubuntu docker images
+# docker pull ubuntu:20.04
+# docker run -it -d --name hasco ubuntu:20.04
+# docker exec -it hasco /bin/bash
+
+## configure binaries
+# apt-get update
+# apt-get install python3 python3-pip sudo vim git llvm-9 cmake scons libboost-all-dev
+
+## copy or download hasco source code in current directory
+# git clone --recursive https://github.com/pku-liang/HASCO.git HASCO
+
+## configure dependence of the HASCO
+## 1.build TVM
+# cd HASCO/src/tvm
+# mkdir build
+# cp cmake/config.cmake build
+## edit: replace 'set(USE_LLVM OFF)' with 'set(USE_LLVM llvm-config-9)'
+# vim build/config.cmake
+# cd build
+# cmake ..
+# make -j8
+## configue PYTHON PATH in shell environment
+# export TVM_HOME=/home/eric/HASCO/src/tvm
+# export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
+
+## pip3 install numpy decorator attrs tornado psutil xgboost cloudpickle
+## pip3 install tensorflow tqdm IPython
+# pip3 install -r requirements.txt
+
+## 2.configure mastro
+# cd HASCO/src/maestro
+# scons
+## configure src/codesign/config.py with absolute path for maestro
+## example: maestro_home = "/home/eric/HASCO/src/maestro/"
+# vim HASCO/src/codesign/config.py 
+	
+## 3.configure for Ax
+# cd HASCO/src/Ax
+# python3 setup.py install
+## configue PYTHON PATH in shell environment
+# export AX_HOME=/home/eric/HASCO/src/Ax
+# export PYTHONPATH=$AX_HOME:${PYTHONPATH}
+
+## 4.mkdir result folders
+# cd HASCO
+# mkdir -p rst/mapping
+# mkdir -p rst/config
+# mkdir -p rst/software
+	
