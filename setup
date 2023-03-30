@@ -11,7 +11,7 @@
 # apt-get install python3 python3-pip sudo vim git llvm-9 cmake scons libboost-all-dev
 
 ## copy or download hasco source code in current directory
-# git clone --recursive https://github.com/pku-liang/HASCO.git HASCO
+# git clone --recursive https://github.com/kompalas/HASCO.git HASCO
 
 ## configure dependence of the HASCO
 ## 1.build TVM
