@@ -8,7 +8,7 @@ supported_models = ["ResNet50", "MobileNetV2", "Xception"]
 
 bits_map = {"int8": 8, "float16": 16, "float32": 32, "int32": 32}
 
-maestro_home = "~/HASCO/src/maestro/"  # absolute path 
+maestro_home = "/home/HASCO/src/maestro/"  # absolute path 
 
 model_path = maestro_home + "maestro"
 

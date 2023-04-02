@@ -8,7 +8,7 @@
 
 ## configure binaries
 # apt-get update
-# apt-get install python3 python3-pip sudo vim git llvm-9 cmake scons libboost-all-dev
+# apt-get install python3 python3-pip sudo vim openssh-client git llvm-9 cmake scons libboost-all-dev tmux -y
 
 ## copy or download hasco source code in current directory
 # git clone --recursive https://github.com/kompalas/HASCO.git HASCO
@@ -24,7 +24,7 @@
 # cmake ..
 # make -j8
 ## configue PYTHON PATH in shell environment
-# export TVM_HOME=/home/eric/HASCO/src/tvm
+# export TVM_HOME=/home/HASCO/src/tvm
 # export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
 
 ## pip3 install numpy decorator attrs tornado psutil xgboost cloudpickle
@@ -35,14 +35,14 @@
 # cd HASCO/src/maestro
 # scons
 ## configure src/codesign/config.py with absolute path for maestro
-## example: maestro_home = "/home/eric/HASCO/src/maestro/"
-# vim HASCO/src/codesign/config.py 
+## example: maestro_home = "/home/HASCO/src/maestro/"
+# sed -i 's_~/HASCO/src/maestro_/home/HASCO/src/maestro_' /home/HASCO/src/codesign/config.py
 	
 ## 3.configure for Ax
 # cd HASCO/src/Ax
 # python3 setup.py install
 ## configue PYTHON PATH in shell environment
-# export AX_HOME=/home/eric/HASCO/src/Ax
+# export AX_HOME=/home/HASCO/src/Ax
 # export PYTHONPATH=$AX_HOME:${PYTHONPATH}
 
 ## 4.mkdir result folders

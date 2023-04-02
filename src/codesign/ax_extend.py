@@ -143,6 +143,7 @@ def get_non_dominated(exp) :
             arm_name = tmp_df.values[0][0]
             arm = arms.get(arm_name)
             arg_str = [str(i) for i in arm.parameters.values()] 
+            print("Keys:", [k for k in arm.parameters.keys()])
             tag = '_'.join(arg_str)
             val = (tag, tmp_df.values[0][2])
             pareto_set.append({key: val})

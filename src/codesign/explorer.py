@@ -156,12 +156,12 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
     '''starting MOBO-based exploration'''
     '''MOBO: init the prior'''
     sobol = Models.SOBOL(exp.search_space)
-    data= None
+    data = None
     while data == None:
         print("Running Sobol initialization trials...")
         exp.new_batch_trial(generator_run=sobol.gen(init_size))
-        data=eval_exp(exp, evaluation_function, benchmark=benchmark, generator=generator, method=method)
-    
+        data = eval_exp(exp, evaluation_function, benchmark=benchmark, generator=generator, method=method)
+
     data_size = get_size(data)
     same_cnt = 0
     '''MOBO: iterative update'''
@@ -175,7 +175,9 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
             ref_point=constraints,
             search_space=exp.search_space
         )
+        print("Initialized MOO model", moo_model)
     
+        print("Beginning trails on iteration", i)
         for index in range(ABANDON_LIMITS): 
             trial = exp.new_trial(generator_run=moo_model.gen(1)) # can be improved
             try:
@@ -186,14 +188,16 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
                 # print("Abandon this trail and start a new one...")
                 trial.mark_abandoned()
                 continue
+        print("Completed trials on iteration", i)
 
-        
+        print("Calculating pareto solutions")
         current_pareto = get_non_dominated(exp) 
         for items in current_pareto:
             for (k, v) in items.items():
                 tags[k].append(v[0])
                 pareto_results[k].append(v[1])
-
+        print("Got tags:\n", tags)
+        print("Got pareto:\n", pareto_results)
 
         
         if get_size(data) == data_size:
@@ -224,6 +228,10 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
         jsonFile = open("{}{}_{}_{}_software.json".format(sw_dir, benchmark.name, acc.name, key), "w")
         jsonFile.write(jsonString)
         jsonFile.close()
+        with open("{}{}_{}_{}_software.json".format(sw_dir, benchmark.name, acc.name, key), "r") as f:
+            jsonString_transl = json.load(f)
+        with open("{}{}_{}_{}_software.json.transl".format(sw_dir, benchmark.name, acc.name, key), "w") as f:
+            f.write(jsonString_transl)
         print(f"{key} done!")
 
     print("All Done!")
