@@ -2,7 +2,7 @@ intrinsic_lib = ["GEMV", "GEMM", "DOT", "CONV"]
 
 eval_methods = ["Model", "Profile", "Simulate"] 
 
-all_metrics = ["latency", "throughput", "power", "area"]
+all_metrics = ["latency", "throughput", "power", "energy", "area"]
 
 supported_models = ["ResNet50", "MobileNetV2", "Xception"]
 
@@ -14,15 +14,16 @@ model_path = maestro_home + "maestro"
 
 rst_dir = "./rst/"
 
-model_config_dir = "./config/"
+model_config_dir = rst_dir + "config/"
 
-mapping_dir = "./mapping/"
+mapping_dir = rst_dir + "mapping/"
 
-sw_dir = rst_dir+"./software/"
+sw_dir = rst_dir + "software/"
 
 verbose = False 
 
 import os
-for path in [rst_dir, rst_dir + model_config_dir, rst_dir + mapping_dir, sw_dir]:
+for path in [rst_dir, model_config_dir, mapping_dir, sw_dir]:
     if not os.path.exists(path) or not os.path.isdir(path):
         os.mkdir(path)
+

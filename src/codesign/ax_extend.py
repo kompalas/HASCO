@@ -196,3 +196,4 @@ def draw_optimization_trace(exp):
             )
 
             render(config)
+

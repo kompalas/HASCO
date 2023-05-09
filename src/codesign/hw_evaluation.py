@@ -48,13 +48,16 @@ def evaluation_function_model(parameterization, benchmark, generator):
 
             '''solution evaluations''' 
             mapping_file = mapping_dir + generator.type + "_" + benchmark.name +"_" + tag + ".m"
-            l, t, p, _, a = model.evaluate(benchmark, schedules, acc, mapping_file)
             
+            # adding the hw specifiations used in the PPA model's HW config file
+            x, y, sp_cap, sp_banks, dma_width, dma_bytes, l_cap, dataflow, dtype = parse_params(generator.type, parameterization)  # off-chip memory are not modeled
+            l, t, p, e, a = model.evaluate(benchmark, schedules, acc, mapping_file)
+ 
             if l == model.max_val:
                 PARAM_TABLE[tag] = None
                 logger.error("Cannot find valid schedules.", exc_info = True) 
 
-            rst =  {"latency": (l, 0.0), "throughput": (t, 0.0), "power": (p, 0.0), "area": (a, 0.0)} 
+            rst =  {"latency": (l, 0.0), "throughput": (t, 0.0), "power": (p, 0.0), "energy": (e, 0.0), "area": (a, 0.0)} 
             
             PARAM_TABLE[tag] = (rst, list(zip(schedules, all_tensors)))
 

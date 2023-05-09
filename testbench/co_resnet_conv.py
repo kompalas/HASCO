@@ -13,7 +13,7 @@ from codesign.explorer import codesign
 if __name__ == '__main__':
     dtype = "int8"
     method = "Model"
-    constraints = {"latency": 0, "power": 0, "area": 0}  # TODO
+    constraints = {"energy": 0, "area": 0}  # TODO
 
     print("Testing accelerators with CONV intrinsic ...")
     generator = CONVGenerator() 
