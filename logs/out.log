@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "testbench/co_resnet_conv.py", line 8, in <module>
+    from codesign.hw_evaluation import gen_software
+  File "/home/HASCO/./src/codesign/hw_evaluation.py", line 3, in <module>
+    from codesign.ppa_model import PPAModel, gen_config
+  File "/home/HASCO/./src/codesign/ppa_model.py", line 12, in <module>
+    from codesign.flextensor_extend import parse_schedule
+  File "/home/HASCO/./src/codesign/flextensor_extend.py", line 4, in <module>
+    from flextensor.task import Task
+  File "/home/HASCO/./src/flextensor/task.py", line 3, in <module>
+    from flextensor.space import EnumSpace
+  File "/home/HASCO/./src/flextensor/space.py", line 7, in <module>
+    from flextensor.utils import (assert_print, gen_enum, any_factor_split, get_factor_lst, gen_group,
+  File "/home/HASCO/./src/flextensor/utils.py", line 328, in <module>
+    def get_iter_info(s: tvm.schedule.Schedule):
+AttributeError: module 'tvm' has no attribute 'schedule'
