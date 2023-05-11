@@ -7,7 +7,7 @@ import subprocess
 from fnmatch import fnmatchcase as match
 from inspect import signature
 
-from codesign.config import  verbose, rst_dir, bits_map
+from codesign.config import  verbose, rst_dir, mapping_dir, bits_map
 from hw_generator.generator import parse_params
 from codesign.flextensor_extend import parse_schedule
 from benchmark.benchmark import Workload
@@ -25,7 +25,7 @@ def gen_config(path, params, acc_type, tag):
 
     bw = 2 * sp_banks * bits_map[dtype]  # dual ports 
     filename = path + "accelerator_" + tag + ".m"
-    fp = open(rst_dir +filename, "w+")
+    fp = open(filename, "w+")
     fp.write("NumPEs: " + str(pes))
     fp.write("\nL1Size: " + str(local_kb * 1024))   # using bytes
     fp.write("\nL2Size: " + str(sp_kb * 1024))  # using bytes
@@ -201,7 +201,7 @@ class PPAModel:
             schedules = [schedules] 
 
         '''generate mapping files'''
-        mapping_fp = open(rst_dir + mapping_file, "w+")
+        mapping_fp = open(mapping_file, "w+")
         mapping_fp.write("Network " + benchmark.name + " {\n")
         for (wl, s) in zip(benchmark.workloads, schedules):
             directives = []
@@ -229,21 +229,28 @@ class PPAModel:
             "--print_res=false",
             "--print_res_csv_file=true",
             "--print_log_file=false",
-            "--Mapping_file="+ mapping_file,
-            "--HW_file=" + self.config_file,
+            "--Mapping_file=" + mapping_file.replace(rst_dir, ''),
+            "--HW_file=" + self.config_file.replace(rst_dir, ''),
             "--print_design_space=true",
             "--msg_print_lv=0"
         ]
  
         devNull = open(os.devnull, 'w') 
-        p = subprocess.Popen(''.join(p+' ' for p in param_list), shell=True, cwd=rst_dir, stdout = devNull,  stderr=devNull)
+        p = subprocess.Popen(' '.join(param_list), shell=True, cwd=rst_dir, stdout=devNull, stderr=devNull)
         p.wait()
 
-
         result_csv = rst_dir + mapping_file.split('/')[-1].replace(".m", ".csv")
-        
+
+        #print(mapping_file)
+        #print(self.config_file)
+        #print(os.path.exists(result_csv))
+        #print(result_csv)
+        #print(' '.join(param_list))
+        #exit(1)
+ 
         if not os.path.exists(result_csv): 
-            os.remove(rst_dir + mapping_file) 
+            #raise Exception(f"Results file does not exist in {result_csv}")
+            os.remove(mapping_file) 
             return self.max_val, self.min_val, self.max_val, self.max_val, self.max_val
 
         '''read the CSV file to obtain ppa data'''
@@ -261,9 +268,9 @@ class PPAModel:
                 ops.append(float(row[5]) * runtime)
                 area.append(float(row[7]))
                 power.append(float(row[8]))
-        
+
         if not verbose: 
-            os.remove(rst_dir + mapping_file)
+            os.remove(mapping_file)
             os.remove(result_csv)
 
         total_runtime = np.sum(latency)
