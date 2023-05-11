@@ -49,8 +49,6 @@ def evaluation_function_model(parameterization, benchmark, generator):
             '''solution evaluations''' 
             mapping_file = mapping_dir + generator.type + "_" + benchmark.name +"_" + tag + ".m"
             
-            # adding the hw specifiations used in the PPA model's HW config file
-            x, y, sp_cap, sp_banks, dma_width, dma_bytes, l_cap, dataflow, dtype = parse_params(generator.type, parameterization)  # off-chip memory are not modeled
             l, t, p, e, a = model.evaluate(benchmark, schedules, acc, mapping_file)
  
             if l == model.max_val:
