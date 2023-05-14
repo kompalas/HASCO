@@ -1,0 +1,48 @@
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Optimal results for Energy
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.818e+10: PEx=20, PEy=29, sp_banks=3, L2_size(kB)=256, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=128, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.793e+10: PEx=11, PEy=16, sp_banks=1, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,370 [__main__] (MainProcess) INFO: Energy=2.788e+10: PEx=24, PEy=29, sp_banks=6, L2_size(kB)=512, L1_size(kB)=256, dma_buswidth=128, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Max 2.818e+10 (20_29_3_256_256_128_128_FIXED_int8)
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Min 2.788e+10 (24_29_6_512_256_128_256_FIXED_int8)
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: *--------------------------------------------------*
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Optimal results for Area
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Area=1.104e+07: PEx=10, PEy=4, sp_banks=6, L2_size(kB)=128, L1_size(kB)=512, dma_buswidth=256, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Max 1.104e+07 (10_4_6_128_512_256_64_FIXED_int8)
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: Min 1.104e+07 (10_4_6_128_512_256_64_FIXED_int8)
+2023-05-14 08:34:54,371 [__main__] (MainProcess) INFO: *--------------------------------------------------*

@@ -18,8 +18,9 @@ def cfg_logger(logfile):
     ch.setFormatter(stdout_formatter)
     logger.addHandler(ch)
 
-    logfile = re.search('/(.*)', logfile).group(1)
-    fh = logging.FileHandler(filename=os.path.join('logs', f'evaluate__{logfile}.log'),
+    logdir = re.search('(.*)/[^/]*?$', logfile).group(1)
+    logfile_name = re.search('/([^/]*?)$', logfile).group(1)
+    fh = logging.FileHandler(filename=os.path.join(logdir, f'evaluate__{logfile_name}.log'),
                              mode='w', encoding='utf-8',)
     fh.setLevel(logging.DEBUG)
     file_formatter = logging.Formatter('%(asctime)s [%(name)s] (%(processName)s) %(levelname)s: %(message)s')

@@ -1,6 +1,7 @@
 #rst/config/
 #rst/mapping/
 #rst/software/
+rst/
 
 # python
 *.py[cod]

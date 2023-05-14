@@ -61,7 +61,7 @@ def evaluation_function_model(parameterization, benchmark, generator):
 
         '''clean up'''
         if verbose == False: 
-             os.remove(rst_dir + config_file)
+             os.remove(config_file)
         return rst 
 
 

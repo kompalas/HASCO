@@ -1,0 +1,4 @@
+NumPEs: 700
+L1Size: 524288
+L2Size: 1048576
+NoC_BW: 96
