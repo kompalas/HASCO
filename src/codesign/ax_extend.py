@@ -136,9 +136,10 @@ def get_non_dominated(exp) :
     arms = exp.arms_by_name
     
     pareto_set = []
+    sol_dict = {}
+
     for key in exp.metrics:
         tmp_df = df.loc[df['metric_name']==key].sort_values('mean')
-        # print(tmp_df)
         try:
             arm_name = tmp_df.values[0][0]
             arm = arms.get(arm_name)
@@ -147,10 +148,20 @@ def get_non_dominated(exp) :
             tag = '_'.join(arg_str)
             val = (tag, tmp_df.values[0][2])
             pareto_set.append({key: val})
+
+            # adding a dictionary with the full evaluation of a solution
+            # get the metrics that have the same arm name as the one saved in pareto
+            arm_df = df.loc[df['arm_name'] == arm_name]
+            sol_dict[key] = {}
+            sol_dict[key][tag] = {}
+            for metric_name in arm_df['metric_name']:
+                sol_dict[key][tag][metric_name] = arm_df[arm_df['metric_name'] == metric_name]['mean'].iloc[0]
+
+
         except Exception as e:
             print(e)
             break
-    return pareto_set
+    return pareto_set, sol_dict
 
 
 def draw_optimization_trace(exp):

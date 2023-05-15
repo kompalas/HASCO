@@ -1,5 +1,7 @@
 #!/bin/bash
-logfile=${1?}
+resdir=${1?}
+logfile=${2?}
 
 python3 src/evaluation/eval_run.py \
+	--resdir $resdir \
 	--logfile $logfile

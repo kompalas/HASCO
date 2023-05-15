@@ -29,13 +29,15 @@ from ax.modelbridge.factory import get_botorch, get_MOO_EHVI
 
 
 from codesign.ax_extend import eval_exp, run_trial, get_non_dominated, get_size
-from codesign.config import intrinsic_lib, eval_methods, all_metrics, verbose, sw_dir
+from codesign.config import intrinsic_lib, eval_methods, all_metrics, verbose, sw_dir, rst_dir
 from codesign.hw_evaluation import evaluation_function, gen_software
 
 from typing import Optional, Any
 
 from utils.logger import logger
  
+
+import pickle
 
 
 INIT_SIZE = 10
@@ -191,7 +193,7 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
         print("Completed trials on iteration", i)
 
         print("Calculating pareto solutions")
-        current_pareto = get_non_dominated(exp) 
+        current_pareto, full_solution_dict = get_non_dominated(exp) 
         for items in current_pareto:
             for (k, v) in items.items():
                 tags[k].append(v[0])
@@ -209,6 +211,11 @@ def codesign(benchmark, generator, method, constraints, init_size=INIT_SIZE, tri
             same_cnt = 0
 
         data_size = get_size(data)
+
+        with open(rst_dir + f"data_df_iter{i}.pkl", "wb") as f:
+            pickle.dump(data.df, f)
+        with open(rst_dir + f"sol_dict_iter{i}.pkl", "wb") as f:
+            pickle.dump(full_solution_dict, f)
 
 
     print("#"*50 + "\nReport:", end='')

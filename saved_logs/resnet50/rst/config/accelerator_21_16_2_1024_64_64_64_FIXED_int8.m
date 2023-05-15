@@ -1,4 +1,0 @@
-NumPEs: 336
-L1Size: 65536
-L2Size: 1048576
-NoC_BW: 32
