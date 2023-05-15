@@ -1,0 +1,88 @@
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Optimal results for Energy
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 0:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 1:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 2:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 3:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 4:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 5:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Solution 6:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,930 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 7:PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 8:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 9:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 10:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 11:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 12:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 13:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 14:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 15:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 16:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 17:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 18:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Solution 19:PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,931 [__main__] (MainProcess) INFO: Metrics: latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Max 2.589e+09 (PEx=19, PEy=22, sp_banks=4, L2_size(kB)=512, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8): latency=10870242.528679071, throughput=32.32621138287597, power=17357.497539618147, energy=2588627926.9035788, area=403496385.3757187
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Min 2.570e+09 (PEx=22, PEy=31, sp_banks=5, L2_size(kB)=1024, L1_size(kB)=64, dma_buswidth=128, dma_maxbytes=64, dataflow=FIXED, dtype=int8): latency=9360333.274050377, throughput=37.21802443064541, power=40828.49508241625, energy=2569978228.0176883, area=1016585995.712965
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: *--------------------------------------------------*
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Optimal results for Latency
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 0:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 1:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 2:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 3:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 4:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 5:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 6:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 7:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 8:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 9:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Solution 10:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,932 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 11:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 12:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 13:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 14:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 15:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 16:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 17:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 18:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Solution 19:PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Metrics: latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Max 7.929e+06 (PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8): latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: Min 7.929e+06 (PEx=8, PEy=31, sp_banks=8, L2_size(kB)=1024, L1_size(kB)=256, dma_buswidth=256, dma_maxbytes=256, dataflow=FIXED, dtype=int8): latency=7929141.398243758, throughput=44.38319838325397, power=7531.446170362333, energy=2646502481.9460144, area=179388007.31771368
+2023-05-15 20:20:13,933 [__main__] (MainProcess) INFO: *--------------------------------------------------*
