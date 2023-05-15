@@ -1,7 +1,10 @@
 import tensorflow.keras.applications as keras_models
+import csv
+import os
 from codesign.config import supported_models
-from benchmark.benchmark import Workload
 from benchmark.computations import conv2d_compute, mm_compute, dwconv_compute
+from benchmark import benchmark_dir
+
 
 def get_model(model_name, input_shape):
     if model_name not in supported_models:
@@ -13,6 +16,7 @@ def get_model(model_name, input_shape):
 
 
 def get_workloads(model, dtype, layout):
+    from benchmark.benchmark import Workload
     workloads = []
     UNIQUE_WORKLOADS = set()
 
@@ -77,3 +81,34 @@ def get_workloads(model, dtype, layout):
     print("Unique workloads: ", len(UNIQUE_WORKLOADS))
 
     return workloads
+
+
+def get_cifar_workloads(model_name, dtype, layout):
+    from benchmark.benchmark import Workload
+    workloads = []
+    UNIQUE_WORKLOADS = set()
+
+    with open(os.path.join(benchmark_dir, 'cifar_models', f'{model_name}.csv'), 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+
+            layer_name, layer_type = row[:2]
+            if layer_type == 'conv2d':
+                c, y, x, k, r, s, stride = row[2:]
+                args = (1, int(c), int(y), int(x), int(k), int(r), int(s), int(stride), dtype, layout)
+                conv = Workload(layer_name, "CONV", conv2d_compute, args)
+                workloads.append(conv)
+                UNIQUE_WORKLOADS.add(conv.tag)
+            
+            elif layer_type == 'dense':
+                m = 1
+                k, _, _, n, _, _, _ = row[2:]
+                args = (m, int(n), int(k), dtype, layout) 
+                gemm = Workload(layer_name, "GEMM", mm_compute, args)
+                workloads.append(gemm)
+                UNIQUE_WORKLOADS.add(gemm.tag)
+
+    print(len(UNIQUE_WORKLOADS), "unique workloads: ", UNIQUE_WORKLOADS)
+    return workloads
+
+

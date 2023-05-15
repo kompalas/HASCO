@@ -1,7 +1,8 @@
 from utils.logger import logger
 
+from benchmark.keras_extend import get_model, get_workloads, get_cifar_workloads 
 from benchmark.computations import conv2d_compute, mm_compute, dwconv_compute, mttkrp_compute, ttm_compute
-from codesign.config import supported_models
+from codesign.config import supported_models, additional_models
 
 class Workload:
 
@@ -35,7 +36,6 @@ class BenchmarkCNN(Benchmark):
     def __init__(self, cnn, dtype, layout="GEMM"):
 
         if cnn in supported_models:
-            from benchmark.keras_extend import get_model, get_workloads 
 
             input_size = "3,224,224"  # inpute image size to be customized
             INPUT_SIZE = tuple((int(d) for d in str.split(input_size, ",")))
@@ -43,6 +43,10 @@ class BenchmarkCNN(Benchmark):
 
             workloads = get_workloads(cnn_model, dtype, layout)
             
+            super().__init__(cnn, workloads) 
+
+        elif cnn in additional_models and 'cifar' in cnn.lower():
+            workloads = get_cifar_workloads(cnn, dtype, layout)
             super().__init__(cnn, workloads) 
 
         else:

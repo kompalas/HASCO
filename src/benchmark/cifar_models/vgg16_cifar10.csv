@@ -1,0 +1,14 @@
+Name,Type,C,Y,X,K,R,S,Stride
+features.0,conv2d,3,32,32,64,3,3,1
+features.3,conv2d,64,32,32,64,3,3,1
+features.7,conv2d,64,16,16,128,3,3,1
+features.10,conv2d,128,16,16,128,3,3,1
+features.14,conv2d,128,8,8,256,3,3,1
+features.17,conv2d,256,8,8,256,3,3,1
+features.20,conv2d,256,8,8,256,3,3,1
+features.24,conv2d,256,4,4,512,3,3,1
+features.27,conv2d,512,4,4,512,3,3,1
+features.30,conv2d,512,4,4,512,3,3,1
+features.34,conv2d,512,2,2,512,3,3,1
+features.37,conv2d,512,2,2,512,3,3,1
+features.40,conv2d,512,2,2,512,3,3,1

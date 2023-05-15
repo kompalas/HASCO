@@ -5,6 +5,8 @@ eval_methods = ["Model", "Profile", "Simulate"]
 all_metrics = ["latency", "throughput", "power", "energy", "area"]
 
 supported_models = ["ResNet50", "MobileNetV2", "Xception"]
+additional_models = ["vgg16_cifar10", "resnet50_cifar10", "mobilenetv2_cifar10", "efficientnet_cifar10",
+                     "vgg16_cifar100", "resnet50_cifar100", "mobilenetv2_cifar100", "efficientnet_cifar100"]
 
 bits_map = {"int8": 8, "float16": 16, "float32": 32, "int32": 32}
 
