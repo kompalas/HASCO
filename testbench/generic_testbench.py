@@ -3,7 +3,8 @@ sys.path.append("./src/")
 sys.path.append("./src/Ax/")
 import argparse
 
-from hw_generator.generator_conv import CONVGenerator, GEMMGenerator
+from hw_generator.generator_conv import CONVGenerator
+from hw_generator.generator_gemm import GEMMGenerator
 
 from benchmark.benchmark import BenchmarkCNN
 from codesign.hw_evaluation import gen_software
