@@ -1,0 +1,2682 @@
+2023-05-15 15:40:01.003091: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-05-15 15:40:01.048134: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2023-05-15 15:40:01.048786: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-15 15:40:01.766674: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-05-15 15:40:05.324438: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-05-15 15:40:05.418712: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-05-15 15:40:05.497916: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 411041792 exceeds 10% of free system memory.
+2023-05-15 15:40:05.644358: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 67108864 exceeds 10% of free system memory.
+2023-05-15 15:40:05.669812: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 67108864 exceeds 10% of free system memory.
+Command line arguments: {'model': 'VGG16', 'metrics': ['energy', 'latency'], 'constraints': [0.0, 0.0], 'generator_type': 'CONV', 'method': 'Model', 'dtype': 'int8', 'trials': 20}
+Testing accelerators with CONV intrinsic ...
+Get the keras model: VGG16
+Unique workloads:  16
+##################################################
+Generator Intrinsic: CONV
+Evaluation Method: Model
+Constraints: energy  latency  
+Starting .................................
+Running Sobol initialization trials...
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:32<08:06, 32.42s/it] 12%|█▎        | 2/16 [01:03<07:24, 31.75s/it] 19%|█▉        | 3/16 [01:35<06:53, 31.81s/it] 25%|██▌       | 4/16 [02:08<06:25, 32.12s/it] 31%|███▏      | 5/16 [02:41<05:59, 32.68s/it] 38%|███▊      | 6/16 [03:14<05:26, 32.60s/it] 44%|████▍     | 7/16 [03:48<04:57, 33.05s/it] 50%|█████     | 8/16 [04:22<04:27, 33.48s/it] 56%|█████▋    | 9/16 [04:57<03:57, 33.99s/it] 62%|██████▎   | 10/16 [05:34<03:28, 34.74s/it] 69%|██████▉   | 11/16 [06:10<02:55, 35.14s/it] 75%|███████▌  | 12/16 [06:46<02:21, 35.46s/it] 81%|████████▏ | 13/16 [07:22<01:47, 35.76s/it] 88%|████████▊ | 14/16 [07:47<01:04, 32.47s/it] 94%|█████████▍| 15/16 [08:12<00:30, 30.11s/it]100%|██████████| 16/16 [08:40<00:00, 29.55s/it]100%|██████████| 16/16 [08:40<00:00, 32.54s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:32<08:04, 32.32s/it] 12%|█▎        | 2/16 [01:05<07:43, 33.11s/it] 19%|█▉        | 3/16 [01:38<07:09, 33.02s/it] 25%|██▌       | 4/16 [02:08<06:19, 31.62s/it] 31%|███▏      | 5/16 [02:42<05:56, 32.38s/it] 38%|███▊      | 6/16 [03:15<05:26, 32.62s/it] 44%|████▍     | 7/16 [03:49<04:58, 33.19s/it] 50%|█████     | 8/16 [04:22<04:24, 33.10s/it] 56%|█████▋    | 9/16 [04:56<03:53, 33.41s/it] 62%|██████▎   | 10/16 [05:30<03:20, 33.46s/it] 69%|██████▉   | 11/16 [06:01<02:44, 32.92s/it] 75%|███████▌  | 12/16 [06:34<02:11, 32.98s/it] 81%|████████▏ | 13/16 [07:09<01:40, 33.47s/it] 88%|████████▊ | 14/16 [07:35<01:02, 31.28s/it] 94%|█████████▍| 15/16 [08:03<00:30, 30.08s/it]100%|██████████| 16/16 [08:29<00:00, 29.08s/it]100%|██████████| 16/16 [08:29<00:00, 31.86s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:32<08:07, 32.50s/it] 12%|█▎        | 2/16 [01:04<07:34, 32.49s/it] 19%|█▉        | 3/16 [01:38<07:08, 32.96s/it] 25%|██▌       | 4/16 [02:12<06:38, 33.21s/it] 31%|███▏      | 5/16 [02:46<06:09, 33.55s/it] 38%|███▊      | 6/16 [03:21<05:41, 34.15s/it] 44%|████▍     | 7/16 [03:56<05:08, 34.30s/it] 50%|█████     | 8/16 [04:26<04:23, 32.98s/it] 56%|█████▋    | 9/16 [04:48<03:27, 29.66s/it] 62%|██████▎   | 10/16 [05:11<02:46, 27.68s/it] 69%|██████▉   | 11/16 [05:34<02:10, 26.19s/it] 75%|███████▌  | 12/16 [05:57<01:40, 25.16s/it] 81%|████████▏ | 13/16 [06:20<01:13, 24.49s/it] 88%|████████▊ | 14/16 [06:36<00:43, 21.90s/it] 94%|█████████▍| 15/16 [06:53<00:20, 20.31s/it]100%|██████████| 16/16 [07:09<00:00, 19.28s/it]100%|██████████| 16/16 [07:09<00:00, 26.87s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:20<05:05, 20.36s/it] 12%|█▎        | 2/16 [00:41<04:48, 20.58s/it] 19%|█▉        | 3/16 [01:00<04:21, 20.12s/it] 25%|██▌       | 4/16 [01:21<04:02, 20.24s/it] 31%|███▏      | 5/16 [01:41<03:44, 20.45s/it] 38%|███▊      | 6/16 [02:02<03:26, 20.67s/it] 44%|████▍     | 7/16 [02:24<03:07, 20.79s/it] 50%|█████     | 8/16 [02:43<02:43, 20.48s/it] 56%|█████▋    | 9/16 [03:04<02:22, 20.40s/it] 62%|██████▎   | 10/16 [03:24<02:02, 20.37s/it] 69%|██████▉   | 11/16 [03:45<01:43, 20.61s/it] 75%|███████▌  | 12/16 [04:06<01:22, 20.63s/it] 81%|████████▏ | 13/16 [04:26<01:01, 20.44s/it] 88%|████████▊ | 14/16 [04:42<00:38, 19.22s/it] 94%|█████████▍| 15/16 [04:59<00:18, 18.55s/it]100%|██████████| 16/16 [05:16<00:00, 18.19s/it]100%|██████████| 16/16 [05:16<00:00, 19.81s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:55, 19.68s/it] 12%|█▎        | 2/16 [00:39<04:37, 19.79s/it] 19%|█▉        | 3/16 [00:59<04:18, 19.85s/it] 25%|██▌       | 4/16 [01:18<03:54, 19.56s/it] 31%|███▏      | 5/16 [01:38<03:37, 19.79s/it] 38%|███▊      | 6/16 [01:58<03:16, 19.65s/it] 44%|████▍     | 7/16 [02:18<02:58, 19.87s/it] 50%|█████     | 8/16 [02:39<02:40, 20.08s/it] 56%|█████▋    | 9/16 [03:00<02:23, 20.53s/it] 62%|██████▎   | 10/16 [03:22<02:04, 20.82s/it] 69%|██████▉   | 11/16 [03:43<01:45, 21.08s/it] 75%|███████▌  | 12/16 [04:05<01:25, 21.32s/it] 81%|████████▏ | 13/16 [04:26<01:03, 21.09s/it] 88%|████████▊ | 14/16 [04:42<00:39, 19.68s/it] 94%|█████████▍| 15/16 [04:58<00:18, 18.60s/it]100%|██████████| 16/16 [05:15<00:00, 18.16s/it]100%|██████████| 16/16 [05:15<00:00, 19.74s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running GP+EHVI optimization trial 1/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b70fca0>
+Beginning trails on iteration 0
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:51, 19.45s/it] 12%|█▎        | 2/16 [00:38<04:30, 19.29s/it] 19%|█▉        | 3/16 [00:58<04:14, 19.56s/it] 25%|██▌       | 4/16 [01:19<03:59, 19.97s/it] 31%|███▏      | 5/16 [01:38<03:37, 19.81s/it] 38%|███▊      | 6/16 [01:58<03:17, 19.74s/it] 44%|████▍     | 7/16 [02:18<02:59, 19.97s/it] 50%|█████     | 8/16 [02:39<02:41, 20.18s/it] 56%|█████▋    | 9/16 [02:59<02:21, 20.22s/it] 62%|██████▎   | 10/16 [03:19<02:00, 20.08s/it] 69%|██████▉   | 11/16 [03:41<01:42, 20.57s/it] 75%|███████▌  | 12/16 [04:01<01:22, 20.60s/it] 81%|████████▏ | 13/16 [04:23<01:02, 20.87s/it] 88%|████████▊ | 14/16 [04:38<00:38, 19.31s/it] 94%|█████████▍| 15/16 [04:55<00:18, 18.53s/it]100%|██████████| 16/16 [05:12<00:00, 17.98s/it]100%|██████████| 16/16 [05:12<00:00, 19.52s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 0
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039], 'latency': [158631707.83613768]}
+Running GP+EHVI optimization trial 2/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d464f7f0>
+Beginning trails on iteration 1
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:20<05:03, 20.22s/it] 12%|█▎        | 2/16 [00:39<04:34, 19.58s/it] 19%|█▉        | 3/16 [00:59<04:20, 20.06s/it] 25%|██▌       | 4/16 [01:21<04:09, 20.79s/it] 31%|███▏      | 5/16 [01:43<03:53, 21.26s/it] 38%|███▊      | 6/16 [02:05<03:34, 21.42s/it] 44%|████▍     | 7/16 [02:28<03:15, 21.73s/it] 50%|█████     | 8/16 [02:50<02:56, 22.08s/it] 56%|█████▋    | 9/16 [03:12<02:33, 21.98s/it] 62%|██████▎   | 10/16 [03:36<02:14, 22.41s/it] 69%|██████▉   | 11/16 [03:59<01:53, 22.80s/it] 75%|███████▌  | 12/16 [04:23<01:31, 22.99s/it] 81%|████████▏ | 13/16 [04:46<01:09, 23.09s/it] 88%|████████▊ | 14/16 [05:02<00:41, 20.97s/it] 94%|█████████▍| 15/16 [05:19<00:19, 19.65s/it]100%|██████████| 16/16 [05:36<00:00, 18.94s/it]100%|██████████| 16/16 [05:36<00:00, 21.03s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 1
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 3/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d464f1c0>
+Beginning trails on iteration 2
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:18<04:44, 18.99s/it] 12%|█▎        | 2/16 [00:37<04:20, 18.58s/it] 19%|█▉        | 3/16 [00:58<04:14, 19.57s/it] 25%|██▌       | 4/16 [01:18<04:01, 20.12s/it] 31%|███▏      | 5/16 [01:38<03:40, 20.08s/it] 38%|███▊      | 6/16 [01:58<03:19, 19.94s/it] 44%|████▍     | 7/16 [02:19<03:02, 20.28s/it] 50%|█████     | 8/16 [02:40<02:42, 20.33s/it] 56%|█████▋    | 9/16 [03:01<02:25, 20.75s/it] 62%|██████▎   | 10/16 [03:22<02:04, 20.70s/it] 69%|██████▉   | 11/16 [03:44<01:45, 21.07s/it] 75%|███████▌  | 12/16 [04:06<01:25, 21.42s/it] 81%|████████▏ | 13/16 [04:28<01:04, 21.57s/it] 88%|████████▊ | 14/16 [04:45<00:40, 20.09s/it] 94%|█████████▍| 15/16 [05:02<00:19, 19.22s/it]100%|██████████| 16/16 [05:20<00:00, 18.85s/it]100%|██████████| 16/16 [05:20<00:00, 20.02s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 2
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 4/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b6d74c0>
+Beginning trails on iteration 3
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:52, 19.52s/it] 12%|█▎        | 2/16 [00:39<04:39, 19.99s/it] 19%|█▉        | 3/16 [01:00<04:22, 20.20s/it] 25%|██▌       | 4/16 [01:20<04:04, 20.39s/it] 31%|███▏      | 5/16 [01:41<03:44, 20.37s/it] 38%|███▊      | 6/16 [02:03<03:28, 20.84s/it] 44%|████▍     | 7/16 [02:25<03:11, 21.27s/it] 50%|█████     | 8/16 [02:46<02:49, 21.17s/it] 56%|█████▋    | 9/16 [03:07<02:27, 21.13s/it] 62%|██████▎   | 10/16 [03:29<02:09, 21.52s/it] 69%|██████▉   | 11/16 [03:52<01:49, 21.85s/it] 75%|███████▌  | 12/16 [04:15<01:28, 22.25s/it] 81%|████████▏ | 13/16 [04:39<01:08, 22.79s/it] 88%|████████▊ | 14/16 [04:55<00:41, 20.76s/it] 94%|█████████▍| 15/16 [05:11<00:19, 19.41s/it]100%|██████████| 16/16 [05:28<00:00, 18.71s/it]100%|██████████| 16/16 [05:28<00:00, 20.55s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 3
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 5/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d5f21670>
+Beginning trails on iteration 4
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:20<05:05, 20.40s/it] 12%|█▎        | 2/16 [00:40<04:42, 20.16s/it] 19%|█▉        | 3/16 [01:00<04:20, 20.02s/it] 25%|██▌       | 4/16 [01:21<04:04, 20.37s/it] 31%|███▏      | 5/16 [01:42<03:46, 20.56s/it] 38%|███▊      | 6/16 [02:02<03:25, 20.60s/it] 44%|████▍     | 7/16 [02:23<03:04, 20.53s/it] 50%|█████     | 8/16 [02:43<02:43, 20.44s/it] 56%|█████▋    | 9/16 [03:05<02:26, 20.99s/it] 62%|██████▎   | 10/16 [03:26<02:06, 21.08s/it] 69%|██████▉   | 11/16 [03:48<01:46, 21.33s/it] 75%|███████▌  | 12/16 [04:11<01:26, 21.66s/it] 81%|████████▏ | 13/16 [04:33<01:05, 21.73s/it] 88%|████████▊ | 14/16 [04:49<00:40, 20.16s/it] 94%|█████████▍| 15/16 [05:05<00:19, 19.02s/it]100%|██████████| 16/16 [05:23<00:00, 18.59s/it]100%|██████████| 16/16 [05:23<00:00, 20.22s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 4
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 6/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d45e9c10>
+Beginning trails on iteration 5
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:54, 19.60s/it] 12%|█▎        | 2/16 [00:40<04:45, 20.36s/it] 19%|█▉        | 3/16 [01:01<04:30, 20.82s/it] 25%|██▌       | 4/16 [01:22<04:09, 20.81s/it] 31%|███▏      | 5/16 [01:43<03:48, 20.74s/it] 38%|███▊      | 6/16 [02:03<03:26, 20.67s/it] 44%|████▍     | 7/16 [02:24<03:06, 20.76s/it] 50%|█████     | 8/16 [02:46<02:48, 21.03s/it] 56%|█████▋    | 9/16 [03:07<02:27, 21.00s/it] 62%|██████▎   | 10/16 [03:27<02:03, 20.63s/it] 69%|██████▉   | 11/16 [03:48<01:43, 20.79s/it] 75%|███████▌  | 12/16 [04:09<01:23, 20.92s/it] 81%|████████▏ | 13/16 [04:31<01:04, 21.36s/it] 88%|████████▊ | 14/16 [04:49<00:40, 20.18s/it] 94%|█████████▍| 15/16 [05:06<00:19, 19.32s/it]100%|██████████| 16/16 [05:24<00:00, 18.99s/it]100%|██████████| 16/16 [05:24<00:00, 20.30s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 5
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 7/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b6c5970>
+Beginning trails on iteration 6
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:56, 19.76s/it] 12%|█▎        | 2/16 [00:40<04:43, 20.27s/it] 19%|█▉        | 3/16 [01:01<04:26, 20.53s/it] 25%|██▌       | 4/16 [01:22<04:07, 20.65s/it] 31%|███▏      | 5/16 [01:43<03:49, 20.85s/it] 38%|███▊      | 6/16 [02:04<03:29, 20.97s/it] 44%|████▍     | 7/16 [02:24<03:06, 20.70s/it] 50%|█████     | 8/16 [02:46<02:47, 21.00s/it] 56%|█████▋    | 9/16 [03:07<02:27, 21.14s/it] 62%|██████▎   | 10/16 [03:29<02:07, 21.30s/it] 69%|██████▉   | 11/16 [03:51<01:48, 21.68s/it] 75%|███████▌  | 12/16 [04:13<01:26, 21.63s/it] 81%|████████▏ | 13/16 [04:35<01:04, 21.66s/it] 88%|████████▊ | 14/16 [04:51<00:40, 20.11s/it] 94%|█████████▍| 15/16 [05:07<00:18, 18.83s/it]100%|██████████| 16/16 [05:24<00:00, 18.38s/it]100%|██████████| 16/16 [05:24<00:00, 20.30s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 6
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 8/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d4606160>
+Beginning trails on iteration 7
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:54, 19.64s/it] 12%|█▎        | 2/16 [00:40<04:44, 20.31s/it] 19%|█▉        | 3/16 [01:01<04:29, 20.70s/it] 25%|██▌       | 4/16 [01:23<04:12, 21.03s/it] 31%|███▏      | 5/16 [01:43<03:48, 20.78s/it] 38%|███▊      | 6/16 [02:03<03:25, 20.52s/it] 44%|████▍     | 7/16 [02:23<03:03, 20.39s/it] 50%|█████     | 8/16 [02:44<02:45, 20.66s/it] 56%|█████▋    | 9/16 [03:04<02:22, 20.40s/it] 62%|██████▎   | 10/16 [03:24<02:01, 20.23s/it] 69%|██████▉   | 11/16 [03:46<01:43, 20.68s/it] 75%|███████▌  | 12/16 [04:07<01:22, 20.74s/it] 81%|████████▏ | 13/16 [04:27<01:02, 20.68s/it] 88%|████████▊ | 14/16 [04:44<00:39, 19.57s/it] 94%|█████████▍| 15/16 [05:01<00:18, 18.62s/it]100%|██████████| 16/16 [05:18<00:00, 18.24s/it]100%|██████████| 16/16 [05:18<00:00, 19.90s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 7
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 9/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b731d90>
+Beginning trails on iteration 8
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:53, 19.53s/it] 12%|█▎        | 2/16 [00:39<04:36, 19.75s/it] 19%|█▉        | 3/16 [00:59<04:17, 19.79s/it] 25%|██▌       | 4/16 [01:19<03:57, 19.79s/it] 31%|███▏      | 5/16 [01:39<03:40, 20.05s/it] 38%|███▊      | 6/16 [02:02<03:28, 20.88s/it] 44%|████▍     | 7/16 [02:23<03:08, 20.90s/it] 50%|█████     | 8/16 [02:45<02:50, 21.32s/it] 56%|█████▋    | 9/16 [03:08<02:33, 21.97s/it] 62%|██████▎   | 10/16 [03:31<02:13, 22.25s/it] 69%|██████▉   | 11/16 [03:53<01:51, 22.32s/it] 75%|███████▌  | 12/16 [04:16<01:29, 22.42s/it] 81%|████████▏ | 13/16 [04:39<01:07, 22.64s/it] 88%|████████▊ | 14/16 [04:55<00:41, 20.67s/it] 94%|█████████▍| 15/16 [05:12<00:19, 19.49s/it]100%|██████████| 16/16 [05:30<00:00, 18.86s/it]100%|██████████| 16/16 [05:30<00:00, 20.63s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 8
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768]}
+Running GP+EHVI optimization trial 10/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d464b4f0>
+Beginning trails on iteration 9
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:20<05:00, 20.03s/it] 12%|█▎        | 2/16 [00:40<04:45, 20.36s/it] 19%|█▉        | 3/16 [01:02<04:32, 20.99s/it] 25%|██▌       | 4/16 [01:23<04:10, 20.86s/it] 31%|███▏      | 5/16 [01:44<03:51, 21.06s/it] 38%|███▊      | 6/16 [02:06<03:32, 21.24s/it] 44%|████▍     | 7/16 [02:27<03:12, 21.43s/it] 50%|█████     | 8/16 [02:49<02:50, 21.36s/it] 56%|█████▋    | 9/16 [03:10<02:29, 21.31s/it] 62%|██████▎   | 10/16 [03:30<02:06, 21.09s/it] 69%|██████▉   | 11/16 [03:52<01:45, 21.19s/it] 75%|███████▌  | 12/16 [04:13<01:24, 21.22s/it] 81%|████████▏ | 13/16 [04:34<01:03, 21.01s/it] 88%|████████▊ | 14/16 [04:51<00:40, 20.01s/it] 94%|█████████▍| 15/16 [05:08<00:19, 19.16s/it]100%|██████████| 16/16 [05:27<00:00, 18.84s/it]100%|██████████| 16/16 [05:27<00:00, 20.44s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 9
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533]}
+Running GP+EHVI optimization trial 11/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b720700>
+Beginning trails on iteration 10
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:56, 19.78s/it] 12%|█▎        | 2/16 [00:40<04:43, 20.23s/it] 19%|█▉        | 3/16 [01:00<04:22, 20.22s/it] 25%|██▌       | 4/16 [01:20<04:02, 20.23s/it] 31%|███▏      | 5/16 [01:41<03:45, 20.49s/it] 38%|███▊      | 6/16 [02:03<03:27, 20.77s/it] 44%|████▍     | 7/16 [02:23<03:07, 20.81s/it] 50%|█████     | 8/16 [02:45<02:47, 20.96s/it] 56%|█████▋    | 9/16 [03:06<02:27, 21.12s/it] 62%|██████▎   | 10/16 [03:28<02:07, 21.27s/it] 69%|██████▉   | 11/16 [03:49<01:46, 21.29s/it] 75%|███████▌  | 12/16 [04:11<01:25, 21.46s/it] 81%|████████▏ | 13/16 [04:34<01:05, 21.86s/it] 88%|████████▊ | 14/16 [04:51<00:40, 20.32s/it] 94%|█████████▍| 15/16 [05:07<00:19, 19.24s/it]100%|██████████| 16/16 [05:25<00:00, 18.83s/it]100%|██████████| 16/16 [05:25<00:00, 20.35s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 10
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533]}
+Running GP+EHVI optimization trial 12/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b72acd0>
+Beginning trails on iteration 11
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:53, 19.55s/it] 12%|█▎        | 2/16 [00:39<04:35, 19.69s/it] 19%|█▉        | 3/16 [00:59<04:19, 19.99s/it] 25%|██▌       | 4/16 [01:21<04:10, 20.84s/it] 31%|███▏      | 5/16 [01:44<03:56, 21.50s/it] 38%|███▊      | 6/16 [02:07<03:40, 22.05s/it] 44%|████▍     | 7/16 [02:31<03:23, 22.60s/it] 50%|█████     | 8/16 [02:54<03:02, 22.77s/it] 56%|█████▋    | 9/16 [03:16<02:37, 22.54s/it] 62%|██████▎   | 10/16 [03:39<02:16, 22.78s/it] 69%|██████▉   | 11/16 [04:03<01:55, 23.02s/it] 75%|███████▌  | 12/16 [04:26<01:32, 23.16s/it] 81%|████████▏ | 13/16 [04:49<01:09, 23.09s/it] 88%|████████▊ | 14/16 [05:06<00:42, 21.14s/it] 94%|█████████▍| 15/16 [05:23<00:19, 19.88s/it]100%|██████████| 16/16 [05:40<00:00, 18.97s/it]100%|██████████| 16/16 [05:40<00:00, 21.27s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 11
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533]}
+Running GP+EHVI optimization trial 13/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d45aebb0>
+Beginning trails on iteration 12
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:20<05:06, 20.41s/it] 12%|█▎        | 2/16 [00:41<04:49, 20.71s/it] 19%|█▉        | 3/16 [01:03<04:38, 21.41s/it] 25%|██▌       | 4/16 [01:24<04:14, 21.18s/it] 31%|███▏      | 5/16 [01:45<03:53, 21.22s/it] 38%|███▊      | 6/16 [02:07<03:33, 21.35s/it] 44%|████▍     | 7/16 [02:27<03:09, 21.03s/it] 50%|█████     | 8/16 [02:48<02:47, 20.98s/it] 56%|█████▋    | 9/16 [03:09<02:26, 20.88s/it] 62%|██████▎   | 10/16 [03:30<02:05, 20.88s/it] 69%|██████▉   | 11/16 [03:50<01:43, 20.74s/it] 75%|███████▌  | 12/16 [04:11<01:23, 20.79s/it] 81%|████████▏ | 13/16 [04:32<01:02, 20.91s/it] 88%|████████▊ | 14/16 [04:49<00:39, 19.69s/it] 94%|█████████▍| 15/16 [05:05<00:18, 18.68s/it]100%|██████████| 16/16 [05:23<00:00, 18.45s/it]100%|██████████| 16/16 [05:23<00:00, 20.23s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 12
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533]}
+Running GP+EHVI optimization trial 14/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b72a280>
+Beginning trails on iteration 13
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:19<04:55, 19.70s/it] 12%|█▎        | 2/16 [00:40<04:42, 20.17s/it] 19%|█▉        | 3/16 [01:01<04:28, 20.66s/it] 25%|██▌       | 4/16 [01:22<04:07, 20.66s/it] 31%|███▏      | 5/16 [01:43<03:49, 20.88s/it] 38%|███▊      | 6/16 [02:04<03:29, 20.90s/it] 44%|████▍     | 7/16 [02:25<03:09, 21.01s/it] 50%|█████     | 8/16 [02:46<02:48, 21.12s/it] 56%|█████▋    | 9/16 [03:07<02:26, 20.98s/it] 62%|██████▎   | 10/16 [03:27<02:03, 20.60s/it] 69%|██████▉   | 11/16 [03:47<01:42, 20.59s/it] 75%|███████▌  | 12/16 [04:05<01:19, 19.83s/it] 81%|████████▏ | 13/16 [04:25<00:59, 19.75s/it] 88%|████████▊ | 14/16 [04:40<00:36, 18.30s/it] 94%|█████████▍| 15/16 [04:54<00:16, 16.88s/it]100%|██████████| 16/16 [05:09<00:00, 16.42s/it]100%|██████████| 16/16 [05:09<00:00, 19.34s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 13
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533]}
+Running GP+EHVI optimization trial 15/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b70f970>
+Beginning trails on iteration 14
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:18<04:38, 18.58s/it] 12%|█▎        | 2/16 [00:37<04:21, 18.65s/it] 19%|█▉        | 3/16 [00:56<04:06, 18.99s/it] 25%|██▌       | 4/16 [01:16<03:50, 19.23s/it] 31%|███▏      | 5/16 [01:33<03:24, 18.56s/it] 38%|███▊      | 6/16 [01:47<02:49, 16.99s/it] 44%|████▍     | 7/16 [02:06<02:39, 17.72s/it] 50%|█████     | 8/16 [02:26<02:26, 18.30s/it] 56%|█████▋    | 9/16 [02:45<02:10, 18.63s/it] 62%|██████▎   | 10/16 [03:04<01:52, 18.75s/it] 69%|██████▉   | 11/16 [03:24<01:35, 19.01s/it] 75%|███████▌  | 12/16 [03:43<01:16, 19.02s/it] 81%|████████▏ | 13/16 [03:54<00:50, 16.78s/it] 88%|████████▊ | 14/16 [04:04<00:29, 14.69s/it] 94%|█████████▍| 15/16 [04:13<00:12, 12.82s/it]100%|██████████| 16/16 [04:22<00:00, 11.64s/it]100%|██████████| 16/16 [04:22<00:00, 16.39s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 14
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775]}
+Running GP+EHVI optimization trial 16/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b5b24c0>
+Beginning trails on iteration 15
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:13<03:28, 13.90s/it] 12%|█▎        | 2/16 [00:33<03:58, 17.02s/it] 19%|█▉        | 3/16 [00:52<03:53, 17.95s/it] 25%|██▌       | 4/16 [01:10<03:36, 18.04s/it] 31%|███▏      | 5/16 [01:29<03:23, 18.48s/it] 38%|███▊      | 6/16 [01:48<03:06, 18.65s/it] 44%|████▍     | 7/16 [02:07<02:49, 18.86s/it] 50%|█████     | 8/16 [02:27<02:32, 19.09s/it] 56%|█████▋    | 9/16 [02:46<02:12, 18.99s/it] 62%|██████▎   | 10/16 [03:05<01:54, 19.03s/it] 69%|██████▉   | 11/16 [03:24<01:35, 19.06s/it] 75%|███████▌  | 12/16 [03:44<01:16, 19.21s/it] 81%|████████▏ | 13/16 [04:03<00:57, 19.32s/it] 88%|████████▊ | 14/16 [04:19<00:36, 18.23s/it] 94%|█████████▍| 15/16 [04:35<00:17, 17.51s/it]100%|██████████| 16/16 [04:51<00:00, 17.09s/it]100%|██████████| 16/16 [04:51<00:00, 18.20s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 15
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775]}
+Running GP+EHVI optimization trial 17/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d5efab50>
+Beginning trails on iteration 16
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:17<04:21, 17.47s/it] 12%|█▎        | 2/16 [00:34<04:03, 17.37s/it] 19%|█▉        | 3/16 [00:52<03:50, 17.69s/it] 25%|██▌       | 4/16 [01:12<03:43, 18.61s/it] 31%|███▏      | 5/16 [01:33<03:32, 19.33s/it] 38%|███▊      | 6/16 [01:54<03:19, 19.94s/it] 44%|████▍     | 7/16 [02:15<03:02, 20.33s/it] 50%|█████     | 8/16 [02:36<02:44, 20.58s/it] 56%|█████▋    | 9/16 [02:57<02:25, 20.73s/it] 62%|██████▎   | 10/16 [03:19<02:05, 20.89s/it] 69%|██████▉   | 11/16 [03:40<01:44, 20.89s/it] 75%|███████▌  | 12/16 [04:00<01:23, 20.82s/it] 81%|████████▏ | 13/16 [04:22<01:02, 20.97s/it] 88%|████████▊ | 14/16 [04:37<00:38, 19.24s/it] 94%|█████████▍| 15/16 [04:52<00:17, 17.99s/it]100%|██████████| 16/16 [05:03<00:00, 15.86s/it]100%|██████████| 16/16 [05:03<00:00, 18.95s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 16
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775, 146495110.35854775]}
+Running GP+EHVI optimization trial 18/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b731dc0>
+Beginning trails on iteration 17
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:17<04:25, 17.69s/it] 12%|█▎        | 2/16 [00:36<04:15, 18.23s/it] 19%|█▉        | 3/16 [00:55<03:59, 18.45s/it] 25%|██▌       | 4/16 [01:13<03:42, 18.56s/it] 31%|███▏      | 5/16 [01:32<03:26, 18.78s/it] 38%|███▊      | 6/16 [01:52<03:10, 19.06s/it] 44%|████▍     | 7/16 [02:12<02:52, 19.22s/it] 50%|█████     | 8/16 [02:30<02:31, 18.92s/it] 56%|█████▋    | 9/16 [02:49<02:13, 19.04s/it] 62%|██████▎   | 10/16 [03:08<01:53, 18.88s/it] 69%|██████▉   | 11/16 [03:27<01:34, 18.99s/it] 75%|███████▌  | 12/16 [03:46<01:16, 19.11s/it] 81%|████████▏ | 13/16 [04:05<00:57, 19.08s/it] 88%|████████▊ | 14/16 [04:21<00:35, 17.96s/it] 94%|█████████▍| 15/16 [04:36<00:17, 17.10s/it]100%|██████████| 16/16 [04:47<00:00, 15.26s/it]100%|██████████| 16/16 [04:47<00:00, 17.96s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 17
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775]}
+Running GP+EHVI optimization trial 19/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f48d5efa460>
+Beginning trails on iteration 18
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:15<03:45, 15.03s/it] 12%|█▎        | 2/16 [00:32<03:51, 16.53s/it] 19%|█▉        | 3/16 [00:52<03:55, 18.10s/it] 25%|██▌       | 4/16 [01:11<03:42, 18.57s/it] 31%|███▏      | 5/16 [01:30<03:25, 18.65s/it] 38%|███▊      | 6/16 [01:49<03:07, 18.78s/it] 44%|████▍     | 7/16 [02:09<02:51, 19.04s/it] 50%|█████     | 8/16 [02:25<02:24, 18.10s/it] 56%|█████▋    | 9/16 [02:44<02:08, 18.39s/it] 62%|██████▎   | 10/16 [03:03<01:51, 18.60s/it] 69%|██████▉   | 11/16 [03:22<01:34, 18.88s/it] 75%|███████▌  | 12/16 [03:41<01:15, 18.91s/it] 81%|████████▏ | 13/16 [04:01<00:57, 19.03s/it] 88%|████████▊ | 14/16 [04:16<00:35, 17.85s/it] 94%|█████████▍| 15/16 [04:32<00:17, 17.21s/it]100%|██████████| 16/16 [04:48<00:00, 16.91s/it]100%|██████████| 16/16 [04:48<00:00, 18.02s/it]
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+/home/HASCO/src/Ax/ax/modelbridge/torch.py:311: UserWarning:
+
+To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 18
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775]}
+Running GP+EHVI optimization trial 20/20...
+Initialized MOO model <ax.modelbridge.multi_objective_torch.MultiObjectiveTorchModelBridge object at 0x7f4a1b731f10>
+Beginning trails on iteration 19
+  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:18<04:35, 18.38s/it] 12%|█▎        | 2/16 [00:37<04:24, 18.88s/it] 19%|█▉        | 3/16 [00:56<04:07, 19.02s/it] 25%|██▌       | 4/16 [01:14<03:41, 18.46s/it] 31%|███▏      | 5/16 [01:25<02:52, 15.67s/it] 38%|███▊      | 6/16 [01:36<02:20, 14.07s/it] 44%|████▍     | 7/16 [01:53<02:16, 15.13s/it] 50%|█████     | 8/16 [02:12<02:11, 16.40s/it] 56%|█████▋    | 9/16 [02:30<01:59, 17.00s/it] 62%|██████▎   | 10/16 [02:49<01:45, 17.62s/it] 69%|██████▉   | 11/16 [03:08<01:30, 18.07s/it] 75%|███████▌  | 12/16 [03:27<01:13, 18.32s/it] 81%|████████▏ | 13/16 [03:47<00:55, 18.66s/it] 88%|████████▊ | 14/16 [04:03<00:35, 17.80s/it] 94%|█████████▍| 15/16 [04:18<00:17, 17.16s/it]100%|██████████| 16/16 [04:34<00:00, 16.85s/it]100%|██████████| 16/16 [04:34<00:00, 17.18s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Completed trials on iteration 19
+Calculating pareto solutions
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Keys: ['x', 'y', 'sp_banks', 'sp_capacity', 'local_capacity', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
+Got tags:
+ {'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+Got pareto:
+ {'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775]}
+##################################################
+Report:{'energy': [99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039, 99607662132.76039], 'latency': [158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 158631707.83613768, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 147480058.71965533, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775, 146495110.35854775]}
+{'energy': ['27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8', '27_32_7_512_128_256_256_FIXED_int8'], 'latency': ['14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '14_23_8_128_256_64_128_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '26_32_8_256_128_64_256_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8', '29_27_8_512_128_256_64_FIXED_int8']}
+##################################################
+Saving Results ...
+energy done!
+latency done!
+All Done!
+Passed.
+free(): invalid pointer
