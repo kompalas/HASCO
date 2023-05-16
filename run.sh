@@ -10,8 +10,8 @@ model=${1?}
 intrinsic=${2:-CONV}
 python3 testbench/generic_testbench.py \
 	--model $model \
-	--constraint-metrics energy latency \
-	--constraint-values 0 0 \
+	--constraint-metrics energy area \
+	--constraint-values 0 1.5e+6 \
 	--intrinsic $intrinsic \
 	--method Model \
 	--dtype int8 \
