@@ -51,9 +51,9 @@ def main():
     #   M = number of optimization trials
     # metrics: saves the evaluation HW metrics
     # tags: saves the configuration of parameters used to evaluate
-    metrics = re.search('(.*?)\n', final_results).group(1)
+    metrics = re.search('({.*?})\n', final_results).group(1)
     metrics = literal_eval(metrics)
-    tags = re.search('\n(.*?)\n', final_results).group(1)
+    tags = re.search('\n({.*?})\n', final_results).group(1)
     tags = literal_eval(tags)
     tag_keys = ['PEx', 'PEy', 'sp_banks', 'L2_size(kB)', 'L1_size(kB)', 'dma_buswidth', 'dma_maxbytes', 'dataflow', 'dtype']
 
